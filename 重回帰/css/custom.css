@@ -1,0 +1,66 @@
+/* Presentation-specific styling */
+:root {
+  --r-main-font: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  --r-heading-font: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+}
+
+.reveal {
+  font-size: 30px;
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  text-transform: none;
+}
+
+.reveal h1,
+.reveal h2 {
+  text-align: center;
+}
+
+.reveal img.regression-figure {
+  display: block;
+  max-width: 88%;
+  max-height: 52vh;
+  width: auto;
+  height: auto;
+  margin: 0.7rem auto;
+  object-fit: contain;
+}
+
+
+.reveal table {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.82em;
+}
+
+.reveal pre {
+  width: 96%;
+  font-size: 0.58em;
+}
+
+.reveal .katex-display {
+  margin: 0.55em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  font-size: 0.88em;
+}
+
+.reveal .katex {
+  line-height: 1.25;
+}
+
+.reveal section > ul,
+.reveal section > ol {
+  margin-top: 0.35em;
+}
+
+.reveal .slides section {
+  box-sizing: border-box;
+}
