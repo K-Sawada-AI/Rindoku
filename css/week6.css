@@ -1,0 +1,44 @@
+/* Week 6 only: no changes to Week 2's css/custom.css. */
+:root {
+  --r-main-font: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  --r-heading-font: "Yu Gothic", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+}
+.reveal { font-size: 27px; }
+.reveal .slides { text-align: left; }
+.reveal h1, .reveal h2, .reveal h3 { text-transform: none; }
+.reveal h1, .reveal h2 { text-align: center; }
+.reveal h3 { font-size: 1.25em; }
+.reveal section { box-sizing: border-box; }
+.reveal section > ul, .reveal section > ol { margin-top: .35em; }
+.reveal li { margin: .1em 0; }
+
+/* Use virtual-slide pixels, not vh. Maintain center:true for every slide. */
+.reveal .slides section img.week6-figure {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 82% !important;
+  max-height: 250px !important;
+  object-fit: contain !important;
+  margin: .25em auto !important;
+  border: 0;
+  box-shadow: none;
+}
+/* Preserve legibility for the data-heavy square confusion matrix. */
+.reveal .slides section img[src*="confusion_matrix.png"] { max-height: 385px !important; }
+.reveal .slides section img[src*="digit_matrix.png"] { max-height: 240px !important; }
+.reveal .slides section img[src*="flatten.png"] { max-height: 215px !important; }
+.reveal .slides section img[src*="linear_multi_flow.png"] { max-height: 235px !important; }
+.reveal .slides section img[src*="decision_regions.png"] { max-height: 260px !important; }
+.reveal .slides section img[src*="softmax_bar.png"] { max-height: 245px !important; }
+.reveal .slides section img[src*="softmax_sigmoid.png"] { max-height: 245px !important; }
+.reveal .slides section img[src*="sgd_update.png"] { max-height: 240px !important; }
+
+.reveal table { margin-left: auto; margin-right: auto; font-size: .73em; }
+.reveal table th, .reveal table td { padding: .2em .36em; }
+.reveal pre { width: 97%; font-size: .55em; margin: .35em auto; }
+.reveal pre code { max-height: 430px; }
+.reveal small { display: block; font-size: .55em; text-align: center; }
+.reveal .katex-display { margin: .36em 0; font-size: .84em; max-width: 100%; overflow-x: auto; overflow-y: hidden; }
+.reveal .katex { line-height: 1.2; }
+.reveal section > p { margin: .4em 0; }

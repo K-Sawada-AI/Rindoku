@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 6 線形多クラス分類 | 機械学習セミナー</title>
+
+  <!-- reveal.js 6 + KaTeX: npm installは不要。インターネット接続は必要です。 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/theme/white.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="css/week6.css?v=20261109-1">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- week2と同じ階層へ配置できるよう、パスはすべて相対パスにしています。 -->
+      <section
+        data-markdown="slides/6_multiclass_classification.md?v=20261109-1"
+        data-separator="^---\r?$"
+        data-separator-vertical="^--\r?$"
+        data-separator-notes="^Note:"
+        data-charset="utf-8"></section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/plugin/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/plugin/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/plugin/math.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.2/dist/plugin/notes.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      controls: true,
+      progress: true,
+      slideNumber: 'h.v',
+      transition: 'slide',
+      center: true,
+      // Markdown内の $...$ と $$...$$ の両方を組版する。
+      katex: {
+        version: '0.16.22',
+        delimiters: [
+          { left: '$$', right: '$$', display: true },
+          { left: '$', right: '$', display: false },
+          { left: '\\(', right: '\\)', display: false },
+          { left: '\\[', right: '\\]', display: true }
+        ],
+        ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      },
+      plugins: [RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes]
+    });
+  </script>
+</body>
+</html>
